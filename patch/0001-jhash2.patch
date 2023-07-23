@@ -1,0 +1,32 @@
+From 409aa5c1e5a64cef531250ef530f4c88f7cb624d Mon Sep 17 00:00:00 2001
+From: Kuniyuki Iwashima <kuniyu@amazon.com>
+Date: Mon, 24 Jul 2023 01:48:00 +0000
+Subject: [PATCH] jhash2
+
+Signed-off-by: Kuniyuki Iwashima <kuniyu@amazon.com>
+---
+ include/net/ipv6.h | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+diff --git a/include/net/ipv6.h b/include/net/ipv6.h
+index 7332296eca44..2acc4c808d45 100644
+--- a/include/net/ipv6.h
++++ b/include/net/ipv6.h
+@@ -752,12 +752,8 @@ static inline u32 ipv6_addr_hash(const struct in6_addr *a)
+ /* more secured version of ipv6_addr_hash() */
+ static inline u32 __ipv6_addr_jhash(const struct in6_addr *a, const u32 initval)
+ {
+-	u32 v = (__force u32)a->s6_addr32[0] ^ (__force u32)a->s6_addr32[1];
+-
+-	return jhash_3words(v,
+-			    (__force u32)a->s6_addr32[2],
+-			    (__force u32)a->s6_addr32[3],
+-			    initval);
++	return jhash2((__force const u32 *)a->s6_addr32,
++		      ARRAY_SIZE(a->s6_addr32), initval);
+ }
+ 
+ static inline bool ipv6_addr_loopback(const struct in6_addr *a)
+-- 
+2.40.1
+

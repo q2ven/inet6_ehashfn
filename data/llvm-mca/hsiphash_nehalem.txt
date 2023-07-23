@@ -1,0 +1,719 @@
+Iterations:        1
+Instructions:      166
+Total Cycles:      190
+Total uOps:        215
+
+Dispatch Width:    4
+uOps Per Cycle:    1.13
+IPC:               0.87
+Block RThroughput: 53.8
+
+
+Instruction Info:
+[1]: #uOps
+[2]: Latency
+[3]: RThroughput
+[4]: MayLoad
+[5]: MayStore
+[6]: HasSideEffects (U)
+
+[1]    [2]    [3]    [4]    [5]    [6]    Instructions:
+ 2      5     1.00           *            push	r15
+ 1      1     0.33                        mov	r15, rcx
+ 2      5     1.00           *            push	r14
+ 2      5     1.00           *            push	r13
+ 1      1     0.33                        mov	r13, rsi
+ 2      5     1.00           *            push	r12
+ 1      1     0.33                        mov	r12, rdi
+ 2      5     1.00           *            push	rbp
+ 1      1     0.33                        mov	ebp, r8d
+ 2      5     1.00           *            push	rbx
+ 1      1     0.33                        mov	ebx, edx
+ 1      1     0.33                        sub	rsp, 8
+ 1      5     0.50    *                   mov	r14d, dword ptr [rip + inet6_ehash_secret.1]
+ 1      1     0.33                        test	r14d, r14d
+ 1      1     1.00                        je	.L6
+ 1      5     0.50    *                   mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+ 1      1     0.33                        test	eax, eax
+ 1      1     1.00                        je	.L7
+ 1      5     0.50    *                   mov	rdi, qword ptr [r15]
+ 1      5     0.50    *                   mov	rcx, qword ptr [r15 + 8]
+ 1      1     0.33                        movzx	ebp, bp
+ 1      1     0.33                        movabs	rdx, 8893317812261383291
+ 1      1     0.33                        movabs	rax, 7746018054687388513
+ 1      1     0.33                        movabs	r8, -2819311800304343090
+ 1      1     0.33                        xor	rdx, rdi
+ 1      1     0.33                        mov	rsi, rdx
+ 1      1     0.33                        add	rax, rdx
+ 2      2     1.00                        rol	rsi, 16
+ 1      1     0.33                        xor	rax, rsi
+ 1      1     0.33                        movabs	rsi, 6604156963082918679
+ 1      1     0.33                        add	r8, rax
+ 2      2     1.00                        rol	rax, 21
+ 1      1     0.33                        add	rsi, rdx
+ 1      1     0.33                        movabs	rdx, -7582328775477698482
+ 1      1     0.33                        xor	rax, r8
+ 1      1     0.33                        xor	rdx, rsi
+ 1      1     0.33                        xor	rdi, r8
+ 2      2     1.00                        rol	rsi, 32
+ 1      1     0.33                        xor	rax, rcx
+ 1      1     0.33                        add	rdi, rdx
+ 2      2     1.00                        rol	rdx, 13
+ 1      1     0.33                        add	rsi, rax
+ 2      2     1.00                        rol	rax, 16
+ 1      1     0.33                        xor	rdx, rdi
+ 1      1     0.33                        xor	rax, rsi
+ 2      2     1.00                        rol	rdi, 32
+ 1      1     0.33                        add	rsi, rdx
+ 1      1     0.33                        add	rdi, rax
+ 2      2     1.00                        rol	rdx, 17
+ 2      2     1.00                        rol	rax, 21
+ 1      1     0.33                        xor	rdx, rsi
+ 1      1     0.33                        xor	rcx, rdi
+ 2      2     1.00                        rol	rsi, 32
+ 1      1     0.33                        xor	rax, rdi
+ 1      1     0.33                        add	rcx, rdx
+ 2      2     1.00                        rol	rdx, 13
+ 1      1     0.33                        movabs	rdi, 1152921504606846976
+ 1      1     0.33                        xor	rax, rdi
+ 1      1     0.33                        xor	rdx, rcx
+ 2      2     1.00                        rol	rcx, 32
+ 1      1     0.33                        add	rsi, rax
+ 2      2     1.00                        rol	rax, 16
+ 1      1     0.33                        xor	rax, rsi
+ 1      1     0.33                        add	rsi, rdx
+ 2      2     1.00                        rol	rdx, 17
+ 1      1     0.33                        add	rcx, rax
+ 2      2     1.00                        rol	rax, 21
+ 1      1     0.33                        xor	rdx, rsi
+ 1      1     0.33                        xor	rax, rcx
+ 2      2     1.00                        rol	rsi, 32
+ 1      1     0.33                        xor	rcx, rdi
+ 1      1     0.33                        add	rcx, rdx
+ 1      1     0.33                        xor	sil, -1
+ 2      2     1.00                        rol	rdx, 13
+ 1      1     0.33                        xor	rdx, rcx
+ 1      1     0.33                        add	rsi, rax
+ 2      2     1.00                        rol	rax, 16
+ 1      1     0.33                        xor	rax, rsi
+ 2      2     1.00                        rol	rcx, 32
+ 1      1     0.33                        add	rsi, rdx
+ 2      2     1.00                        rol	rdx, 17
+ 1      1     0.33                        add	rcx, rax
+ 2      2     1.00                        rol	rax, 21
+ 1      1     0.33                        xor	rdx, rsi
+ 1      1     0.33                        xor	rax, rcx
+ 2      2     1.00                        rol	rsi, 32
+ 1      1     0.33                        add	rcx, rdx
+ 2      2     1.00                        rol	rdx, 13
+ 1      1     0.33                        add	rsi, rax
+ 1      1     0.33                        xor	rdx, rcx
+ 2      2     1.00                        rol	rax, 16
+ 2      2     1.00                        rol	rcx, 32
+ 1      1     0.33                        xor	rax, rsi
+ 1      1     0.33                        add	rsi, rdx
+ 2      2     1.00                        rol	rdx, 17
+ 1      1     0.33                        add	rcx, rax
+ 1      1     0.33                        xor	rdx, rsi
+ 2      2     1.00                        rol	rax, 21
+ 1      1     0.33                        xor	rax, rcx
+ 2      2     1.00                        rol	rsi, 32
+ 1      1     0.33                        add	rcx, rdx
+ 2      2     1.00                        rol	rdx, 13
+ 1      1     0.33                        add	rsi, rax
+ 2      2     1.00                        rol	rax, 16
+ 1      1     0.33                        xor	rcx, rdx
+ 1      1     0.33                        xor	rax, rsi
+ 1      1     0.33                        add	rsi, rcx
+ 2      2     1.00                        rol	rcx, 17
+ 1      1     0.33                        mov	rdx, rcx
+ 2      2     1.00                        rol	rax, 21
+ 1      5     0.50    *                   mov	ecx, dword ptr [r12]
+ 1      1     0.33                        xor	rdx, rsi
+ 2      2     1.00                        rol	rsi, 32
+ 1      1     0.33                        xor	edx, esi
+ 1      1     0.50                        lea	edi, [r14 + rcx - 559038725]
+ 1      5     0.50    *                   mov	ecx, dword ptr [r13 + 12]
+ 1      1     0.33                        xor	edx, eax
+ 1      1     0.33                        mov	eax, ebx
+ 1      1     0.50                        shl	eax, 16
+ 1      1     0.33                        add	edx, edi
+ 1      1     0.33                        add	ecx, edi
+ 1      1     0.33                        or	eax, ebp
+ 1      1     0.33                        mov	esi, edx
+ 1      1     0.33                        add	eax, edi
+ 2      2     1.00                        rol	esi, 14
+ 1      1     0.33                        xor	eax, edx
+ 1      1     0.33                        sub	eax, esi
+ 1      1     0.33                        mov	esi, eax
+ 1      1     0.33                        xor	ecx, eax
+ 2      2     1.00                        rol	esi, 11
+ 1      1     0.33                        sub	ecx, esi
+ 1      1     0.33                        mov	esi, ecx
+ 1      1     0.33                        xor	edx, ecx
+ 1      1     0.33                        add	rsp, 8
+ 2      2     1.00                        ror	esi, 7
+ 1      6     0.50    *                   pop	rbx
+ 1      6     0.50    *                   pop	rbp
+ 1      1     0.33                        sub	edx, esi
+ 1      6     0.50    *                   pop	r12
+ 1      6     0.50    *                   pop	r13
+ 1      1     0.33                        mov	esi, edx
+ 1      1     0.33                        xor	eax, edx
+ 1      6     0.50    *                   pop	r14
+ 1      6     0.50    *                   pop	r15
+ 2      2     1.00                        rol	esi, 16
+ 1      1     0.33                        sub	eax, esi
+ 1      1     0.33                        mov	esi, eax
+ 1      1     0.33                        xor	ecx, eax
+ 2      2     1.00                        rol	esi, 4
+ 1      1     0.33                        sub	ecx, esi
+ 1      1     0.33                        xor	edx, ecx
+ 2      2     1.00                        rol	ecx, 14
+ 1      1     0.33                        sub	edx, ecx
+ 1      1     0.33                        xor	eax, edx
+ 2      2     1.00                        ror	edx, 8
+ 1      1     0.33                        sub	eax, edx
+ 1      1     1.00                  U     ret
+ 3      5     1.00                        call	rand
+ 1      1     1.00           *            mov	dword ptr [rip + inet6_ehash_secret.1], eax
+ 1      1     0.33                        mov	r14d, eax
+ 1      5     0.50    *                   mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+ 1      1     0.33                        test	eax, eax
+ 1      1     1.00                        jne	.L3
+ 3      5     1.00                        call	rand
+ 1      1     1.00           *            mov	dword ptr [rip + ipv6_hash_secret.0], eax
+ 1      1     1.00                        jmp	.L3
+
+
+Resources:
+[0]   - SBDivider
+[1]   - SBFPDivider
+[2]   - SBPort0
+[3]   - SBPort1
+[4]   - SBPort4
+[5]   - SBPort5
+[6.0] - SBPort23
+[6.1] - SBPort23
+
+
+Resource pressure per iteration:
+[0]    [1]    [2]    [3]    [4]    [5]    [6.0]  [6.1]  
+ -      -     64.00  49.00  10.00  71.00  11.00  12.00  
+
+Resource pressure by instruction:
+[0]    [1]    [2]    [3]    [4]    [5]    [6.0]  [6.1]  Instructions:
+ -      -      -      -     1.00    -      -     1.00   push	r15
+ -      -      -      -      -     1.00    -      -     mov	r15, rcx
+ -      -      -      -     1.00    -     1.00    -     push	r14
+ -      -      -      -     1.00    -      -     1.00   push	r13
+ -      -      -     1.00    -      -      -      -     mov	r13, rsi
+ -      -      -      -     1.00    -     1.00    -     push	r12
+ -      -     1.00    -      -      -      -      -     mov	r12, rdi
+ -      -      -      -     1.00    -      -     1.00   push	rbp
+ -      -      -      -      -     1.00    -      -     mov	ebp, r8d
+ -      -      -      -     1.00    -     1.00    -     push	rbx
+ -      -      -     1.00    -      -      -      -     mov	ebx, edx
+ -      -      -     1.00    -      -      -      -     sub	rsp, 8
+ -      -      -      -      -      -      -     1.00   mov	r14d, dword ptr [rip + inet6_ehash_secret.1]
+ -      -      -     1.00    -      -      -      -     test	r14d, r14d
+ -      -      -      -      -     1.00    -      -     je	.L6
+ -      -      -      -      -      -     1.00    -     mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+ -      -     1.00    -      -      -      -      -     test	eax, eax
+ -      -      -      -      -     1.00    -      -     je	.L7
+ -      -      -      -      -      -      -     1.00   mov	rdi, qword ptr [r15]
+ -      -      -      -      -      -     1.00    -     mov	rcx, qword ptr [r15 + 8]
+ -      -     1.00    -      -      -      -      -     movzx	ebp, bp
+ -      -      -      -      -     1.00    -      -     movabs	rdx, 8893317812261383291
+ -      -      -     1.00    -      -      -      -     movabs	rax, 7746018054687388513
+ -      -     1.00    -      -      -      -      -     movabs	r8, -2819311800304343090
+ -      -      -     1.00    -      -      -      -     xor	rdx, rdi
+ -      -     1.00    -      -      -      -      -     mov	rsi, rdx
+ -      -      -     1.00    -      -      -      -     add	rax, rdx
+ -      -     2.00    -      -      -      -      -     rol	rsi, 16
+ -      -      -     1.00    -      -      -      -     xor	rax, rsi
+ -      -      -      -      -     1.00    -      -     movabs	rsi, 6604156963082918679
+ -      -      -     1.00    -      -      -      -     add	r8, rax
+ -      -     2.00    -      -      -      -      -     rol	rax, 21
+ -      -      -      -      -     1.00    -      -     add	rsi, rdx
+ -      -      -     1.00    -      -      -      -     movabs	rdx, -7582328775477698482
+ -      -     1.00    -      -      -      -      -     xor	rax, r8
+ -      -      -      -      -     1.00    -      -     xor	rdx, rsi
+ -      -      -      -      -     1.00    -      -     xor	rdi, r8
+ -      -     2.00    -      -      -      -      -     rol	rsi, 32
+ -      -     1.00    -      -      -      -      -     xor	rax, rcx
+ -      -      -     1.00    -      -      -      -     add	rdi, rdx
+ -      -      -      -      -     2.00    -      -     rol	rdx, 13
+ -      -      -     1.00    -      -      -      -     add	rsi, rax
+ -      -     2.00    -      -      -      -      -     rol	rax, 16
+ -      -      -      -      -     1.00    -      -     xor	rdx, rdi
+ -      -      -     1.00    -      -      -      -     xor	rax, rsi
+ -      -      -      -      -     2.00    -      -     rol	rdi, 32
+ -      -      -      -      -     1.00    -      -     add	rsi, rdx
+ -      -      -     1.00    -      -      -      -     add	rdi, rax
+ -      -     2.00    -      -      -      -      -     rol	rdx, 17
+ -      -     2.00    -      -      -      -      -     rol	rax, 21
+ -      -      -      -      -     1.00    -      -     xor	rdx, rsi
+ -      -      -     1.00    -      -      -      -     xor	rcx, rdi
+ -      -      -      -      -     2.00    -      -     rol	rsi, 32
+ -      -      -     1.00    -      -      -      -     xor	rax, rdi
+ -      -      -      -      -     1.00    -      -     add	rcx, rdx
+ -      -     2.00    -      -      -      -      -     rol	rdx, 13
+ -      -      -     1.00    -      -      -      -     movabs	rdi, 1152921504606846976
+ -      -      -     1.00    -      -      -      -     xor	rax, rdi
+ -      -     1.00    -      -      -      -      -     xor	rdx, rcx
+ -      -      -      -      -     2.00    -      -     rol	rcx, 32
+ -      -      -      -      -     1.00    -      -     add	rsi, rax
+ -      -     2.00    -      -      -      -      -     rol	rax, 16
+ -      -      -     1.00    -      -      -      -     xor	rax, rsi
+ -      -      -      -      -     1.00    -      -     add	rsi, rdx
+ -      -      -      -      -     2.00    -      -     rol	rdx, 17
+ -      -      -     1.00    -      -      -      -     add	rcx, rax
+ -      -      -      -      -     2.00    -      -     rol	rax, 21
+ -      -     1.00    -      -      -      -      -     xor	rdx, rsi
+ -      -     1.00    -      -      -      -      -     xor	rax, rcx
+ -      -     2.00    -      -      -      -      -     rol	rsi, 32
+ -      -      -     1.00    -      -      -      -     xor	rcx, rdi
+ -      -      -      -      -     1.00    -      -     add	rcx, rdx
+ -      -      -     1.00    -      -      -      -     xor	sil, -1
+ -      -      -      -      -     2.00    -      -     rol	rdx, 13
+ -      -      -     1.00    -      -      -      -     xor	rdx, rcx
+ -      -     1.00    -      -      -      -      -     add	rsi, rax
+ -      -     2.00    -      -      -      -      -     rol	rax, 16
+ -      -      -     1.00    -      -      -      -     xor	rax, rsi
+ -      -      -      -      -     2.00    -      -     rol	rcx, 32
+ -      -     1.00    -      -      -      -      -     add	rsi, rdx
+ -      -      -      -      -     2.00    -      -     rol	rdx, 17
+ -      -      -     1.00    -      -      -      -     add	rcx, rax
+ -      -     2.00    -      -      -      -      -     rol	rax, 21
+ -      -     1.00    -      -      -      -      -     xor	rdx, rsi
+ -      -      -      -      -     1.00    -      -     xor	rax, rcx
+ -      -      -      -      -     2.00    -      -     rol	rsi, 32
+ -      -      -     1.00    -      -      -      -     add	rcx, rdx
+ -      -     2.00    -      -      -      -      -     rol	rdx, 13
+ -      -     1.00    -      -      -      -      -     add	rsi, rax
+ -      -      -      -      -     1.00    -      -     xor	rdx, rcx
+ -      -      -      -      -     2.00    -      -     rol	rax, 16
+ -      -     2.00    -      -      -      -      -     rol	rcx, 32
+ -      -     1.00    -      -      -      -      -     xor	rax, rsi
+ -      -      -     1.00    -      -      -      -     add	rsi, rdx
+ -      -      -      -      -     2.00    -      -     rol	rdx, 17
+ -      -     1.00    -      -      -      -      -     add	rcx, rax
+ -      -      -      -      -     1.00    -      -     xor	rdx, rsi
+ -      -     2.00    -      -      -      -      -     rol	rax, 21
+ -      -      -     1.00    -      -      -      -     xor	rax, rcx
+ -      -      -      -      -     2.00    -      -     rol	rsi, 32
+ -      -      -     1.00    -      -      -      -     add	rcx, rdx
+ -      -     2.00    -      -      -      -      -     rol	rdx, 13
+ -      -      -      -      -     1.00    -      -     add	rsi, rax
+ -      -     2.00    -      -      -      -      -     rol	rax, 16
+ -      -      -     1.00    -      -      -      -     xor	rcx, rdx
+ -      -     1.00    -      -      -      -      -     xor	rax, rsi
+ -      -      -     1.00    -      -      -      -     add	rsi, rcx
+ -      -      -      -      -     2.00    -      -     rol	rcx, 17
+ -      -     1.00    -      -      -      -      -     mov	rdx, rcx
+ -      -      -      -      -     2.00    -      -     rol	rax, 21
+ -      -      -      -      -      -      -     1.00   mov	ecx, dword ptr [r12]
+ -      -     1.00    -      -      -      -      -     xor	rdx, rsi
+ -      -      -      -      -     2.00    -      -     rol	rsi, 32
+ -      -     1.00    -      -      -      -      -     xor	edx, esi
+ -      -      -     1.00    -      -      -      -     lea	edi, [r14 + rcx - 559038725]
+ -      -      -      -      -      -     1.00    -     mov	ecx, dword ptr [r13 + 12]
+ -      -      -     1.00    -      -      -      -     xor	edx, eax
+ -      -      -     1.00    -      -      -      -     mov	eax, ebx
+ -      -      -      -      -     1.00    -      -     shl	eax, 16
+ -      -     1.00    -      -      -      -      -     add	edx, edi
+ -      -      -     1.00    -      -      -      -     add	ecx, edi
+ -      -      -     1.00    -      -      -      -     or	eax, ebp
+ -      -      -     1.00    -      -      -      -     mov	esi, edx
+ -      -      -     1.00    -      -      -      -     add	eax, edi
+ -      -      -      -      -     2.00    -      -     rol	esi, 14
+ -      -     1.00    -      -      -      -      -     xor	eax, edx
+ -      -      -     1.00    -      -      -      -     sub	eax, esi
+ -      -     1.00    -      -      -      -      -     mov	esi, eax
+ -      -      -     1.00    -      -      -      -     xor	ecx, eax
+ -      -      -      -      -     2.00    -      -     rol	esi, 11
+ -      -     1.00    -      -      -      -      -     sub	ecx, esi
+ -      -      -     1.00    -      -      -      -     mov	esi, ecx
+ -      -     1.00    -      -      -      -      -     xor	edx, ecx
+ -      -      -     1.00    -      -      -      -     add	rsp, 8
+ -      -      -      -      -     2.00    -      -     ror	esi, 7
+ -      -      -      -      -      -      -     1.00   pop	rbx
+ -      -      -      -      -      -     1.00    -     pop	rbp
+ -      -      -     1.00    -      -      -      -     sub	edx, esi
+ -      -      -      -      -      -     1.00    -     pop	r12
+ -      -      -      -      -      -      -     1.00   pop	r13
+ -      -     1.00    -      -      -      -      -     mov	esi, edx
+ -      -      -      -      -     1.00    -      -     xor	eax, edx
+ -      -      -      -      -      -     1.00    -     pop	r14
+ -      -      -      -      -      -      -     1.00   pop	r15
+ -      -      -      -      -     2.00    -      -     rol	esi, 16
+ -      -      -     1.00    -      -      -      -     sub	eax, esi
+ -      -     1.00    -      -      -      -      -     mov	esi, eax
+ -      -      -     1.00    -      -      -      -     xor	ecx, eax
+ -      -      -      -      -     2.00    -      -     rol	esi, 4
+ -      -     1.00    -      -      -      -      -     sub	ecx, esi
+ -      -      -     1.00    -      -      -      -     xor	edx, ecx
+ -      -      -      -      -     2.00    -      -     rol	ecx, 14
+ -      -     1.00    -      -      -      -      -     sub	edx, ecx
+ -      -      -     1.00    -      -      -      -     xor	eax, edx
+ -      -     2.00    -      -      -      -      -     ror	edx, 8
+ -      -      -     1.00    -      -      -      -     sub	eax, edx
+ -      -      -      -      -     1.00    -      -     ret
+ -      -      -      -     1.00   1.00   1.00    -     call	rand
+ -      -      -      -     1.00    -     1.00    -     mov	dword ptr [rip + inet6_ehash_secret.1], eax
+ -      -     1.00    -      -      -      -      -     mov	r14d, eax
+ -      -      -      -      -      -      -     1.00   mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+ -      -      -     1.00    -      -      -      -     test	eax, eax
+ -      -      -      -      -     1.00    -      -     jne	.L3
+ -      -      -      -     1.00   1.00    -     1.00   call	rand
+ -      -      -      -     1.00    -      -     1.00   mov	dword ptr [rip + ipv6_hash_secret.0], eax
+ -      -      -      -      -     1.00    -      -     jmp	.L3
+
+
+Timeline view:
+                    0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          
+Index     0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789          0123456789
+
+[0,0]     DeeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   push	r15
+[0,1]     DeE----R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	r15, rcx
+[0,2]     .D====eeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   push	r14
+[0,3]     .D=========eeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   push	r13
+[0,4]     . DeE------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	r13, rsi
+[0,5]     . D=============eeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   push	r12
+[0,6]     . DeE-----------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	r12, rdi
+[0,7]     .  D=================eeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   push	rbp
+[0,8]     .  DeE---------------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	ebp, r8d
+[0,9]     .   D=====================eeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   push	rbx
+[0,10]    .   DeE-------------------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	ebx, edx
+[0,11]    .   D==========================eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	rsp, 8
+[0,12]    .    DeeeeeE---------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	r14d, dword ptr [rip + inet6_ehash_secret.1]
+[0,13]    .    D=====eE--------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   test	r14d, r14d
+[0,14]    .    D======eE-------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   je	.L6
+[0,15]    .    D=eeeeeE--------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+[0,16]    .    .D=====eE-------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   test	eax, eax
+[0,17]    .    .D======eE------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   je	.L7
+[0,18]    .    .DeeeeeE--------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	rdi, qword ptr [r15]
+[0,19]    .    .D=eeeeeE-------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	rcx, qword ptr [r15 + 8]
+[0,20]    .    . DeE-----------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movzx	ebp, bp
+[0,21]    .    . DeE-----------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movabs	rdx, 8893317812261383291
+[0,22]    .    . DeE-----------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movabs	rax, 7746018054687388513
+[0,23]    .    . D=eE----------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movabs	r8, -2819311800304343090
+[0,24]    .    .  D===eE-------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rdi
+[0,25]    .    .  D====eE------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	rsi, rdx
+[0,26]    .    .  D====eE------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rax, rdx
+[0,27]    .    .   D====eeE----------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 16
+[0,28]    .    .   D======eE---------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rsi
+[0,29]    .    .   DeE---------------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movabs	rsi, 6604156963082918679
+[0,30]    .    .    D======eE--------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	r8, rax
+[0,31]    .    .    D=======eeE------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 21
+[0,32]    .    .    D===eE-----------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rdx
+[0,33]    .    .    .D==eE-----------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movabs	rdx, -7582328775477698482
+[0,34]    .    .    .D========eE-----------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, r8
+[0,35]    .    .    .D===eE----------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rsi
+[0,36]    .    .    .D======eE-------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdi, r8
+[0,37]    .    .    . D===eeE--------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 32
+[0,38]    .    .    . D========eE----------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rcx
+[0,39]    .    .    . D======eE------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rdi, rdx
+[0,40]    .    .    .  D==eeE--------------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 13
+[0,41]    .    .    .  D========eE---------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rax
+[0,42]    .    .    .   D=======eeE--------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 16
+[0,43]    .    .    .   D=====eE-----------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rdi
+[0,44]    .    .    .   D=========eE-------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rsi
+[0,45]    .    .    .    D=====eeE---------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdi, 32
+[0,46]    .    .    .    D=======eE--------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rdx
+[0,47]    .    .    .    D=========eE------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rdi, rax
+[0,48]    .    .    .    .D=======eeE------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 17
+[0,49]    .    .    .    .D=========eeE----R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 21
+[0,50]    .    .    .    . D========eE-----R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rsi
+[0,51]    .    .    .    . D========eE-----R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rcx, rdi
+[0,52]    .    .    .    . D======eeE------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 32
+[0,53]    .    .    .    .  D=========eE---R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rdi
+[0,54]    .    .    .    .  D========eE----R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rdx
+[0,55]    .    .    .    .  D=========eeE--R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 13
+[0,56]    .    .    .    .   DeE-----------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   movabs	rdi, 1152921504606846976
+[0,57]    .    .    .    .   D=========eE--R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rdi
+[0,58]    .    .    .    .   D==========eE-R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rcx
+[0,59]    .    .    .    .    D=======eeE--R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rcx, 32
+[0,60]    .    .    .    .    D=========eE-R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rax
+[0,61]    .    .    .    .    .D=========eeER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 16
+[0,62]    .    .    .    .    .D===========eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rsi
+[0,63]    .    .    .    .    .D=========eE--R    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rdx
+[0,64]    .    .    .    .    . D=========eeER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 17
+[0,65]    .    .    .    .    . D===========eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rax
+[0,66]    .    .    .    .    .  D==========eeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 21
+[0,67]    .    .    .    .    .  D===========eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rsi
+[0,68]    .    .    .    .    .  D============eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rcx
+[0,69]    .    .    .    .    .   D========eeE--R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 32
+[0,70]    .    .    .    .    .   D==========eE-R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rcx, rdi
+[0,71]    .    .    .    .    .   D===========eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rdx
+[0,72]    .    .    .    .    .    D==========eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	sil, -1
+[0,73]    .    .    .    .    .    D===========eeER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 13
+[0,74]    .    .    .    .    .    D=============eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rcx
+[0,75]    .    .    .    .    .    .D==========eE--R   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rax
+[0,76]    .    .    .    .    .    .D===========eeER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 16
+[0,77]    .    .    .    .    .    .D=============eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rsi
+[0,78]    .    .    .    .    .    . D===========eeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rcx, 32
+[0,79]    .    .    .    .    .    . D============eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rdx
+[0,80]    .    .    .    .    .    .  D============eeER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 17
+[0,81]    .    .    .    .    .    .  D============eE-R.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rax
+[0,82]    .    .    .    .    .    .   D===========eeER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 21
+[0,83]    .    .    .    .    .    .   D=============eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rsi
+[0,84]    .    .    .    .    .    .   D=============eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rcx
+[0,85]    .    .    .    .    .    .    D=============eeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 32
+[0,86]    .    .    .    .    .    .    D=============eE-R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rdx
+[0,87]    .    .    .    .    .    .    .D============eeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 13
+[0,88]    .    .    .    .    .    .    .D==============eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rax
+[0,89]    .    .    .    .    .    .    .D==============eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rcx
+[0,90]    .    .    .    .    .    .    . D==============eeER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 16
+[0,91]    .    .    .    .    .    .    . D==============eeER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rcx, 32
+[0,92]    .    .    .    .    .    .    .  D===============eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rsi
+[0,93]    .    .    .    .    .    .    .  D=============eE--R   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rdx
+[0,94]    .    .    .    .    .    .    .  D===============eeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 17
+[0,95]    .    .    .    .    .    .    .   D===============eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rax
+[0,96]    .    .    .    .    .    .    .   D================eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rsi
+[0,97]    .    .    .    .    .    .    .   D================eeER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 21
+[0,98]    .    .    .    .    .    .    .    D=================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rcx
+[0,99]    .    .    .    .    .    .    .    D================eeER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 32
+[0,100]   .    .    .    .    .    .    .    D================eE-R    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rcx, rdx
+[0,101]   .    .    .    .    .    .    .    .D================eeER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rdx, 13
+[0,102]   .    .    .    .    .    .    .    .D=================eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rax
+[0,103]   .    .    .    .    .    .    .    . D=================eeER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 16
+[0,104]   .    .    .    .    .    .    .    . D=================eE-R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rcx, rdx
+[0,105]   .    .    .    .    .    .    .    . D===================eER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rax, rsi
+[0,106]   .    .    .    .    .    .    .    .  D=================eE-R.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsi, rcx
+[0,107]   .    .    .    .    .    .    .    .  D=================eeER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rcx, 17
+[0,108]   .    .    .    .    .    .    .    .  D===================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	rdx, rcx
+[0,109]   .    .    .    .    .    .    .    .   D==================eeER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rax, 21
+[0,110]   .    .    .    .    .    .    .    .   DeeeeeE---------------R   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	ecx, dword ptr [r12]
+[0,111]   .    .    .    .    .    .    .    .   D===================eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	rdx, rsi
+[0,112]   .    .    .    .    .    .    .    .    D===================eeER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	rsi, 32
+[0,113]   .    .    .    .    .    .    .    .    D=====================eER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	edx, esi
+[0,114]   .    .    .    .    .    .    .    .    D====eE-----------------R.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   lea	edi, [r14 + rcx - 559038725]
+[0,115]   .    .    .    .    .    .    .    .    .DeeeeeE----------------R.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	ecx, dword ptr [r13 + 12]
+[0,116]   .    .    .    .    .    .    .    .    .D=====================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	edx, eax
+[0,117]   .    .    .    .    .    .    .    .    .DeE---------------------R    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	eax, ebx
+[0,118]   .    .    .    .    .    .    .    .    .D=============eE--------R    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   shl	eax, 16
+[0,119]   .    .    .    .    .    .    .    .    . D=====================eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	edx, edi
+[0,120]   .    .    .    .    .    .    .    .    . D=====eE----------------R   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	ecx, edi
+[0,121]   .    .    .    .    .    .    .    .    . D==============eE-------R   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   or	eax, ebp
+[0,122]   .    .    .    .    .    .    .    .    . D======================eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	esi, edx
+[0,123]   .    .    .    .    .    .    .    .    .  D==============eE-------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	eax, edi
+[0,124]   .    .    .    .    .    .    .    .    .  D======================eeER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	esi, 14
+[0,125]   .    .    .    .    .    .    .    .    .  D=====================eE--R.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	eax, edx
+[0,126]   .    .    .    .    .    .    .    .    .   D=======================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	eax, esi
+[0,127]   .    .    .    .    .    .    .    .    .   D========================eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	esi, eax
+[0,128]   .    .    .    .    .    .    .    .    .   D========================eER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	ecx, eax
+[0,129]   .    .    .    .    .    .    .    .    .    D========================eeER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	esi, 11
+[0,130]   .    .    .    .    .    .    .    .    .    D==========================eER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	ecx, esi
+[0,131]   .    .    .    .    .    .    .    .    .    D===========================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	esi, ecx
+[0,132]   .    .    .    .    .    .    .    .    .    .D==========================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	edx, ecx
+[0,133]   .    .    .    .    .    .    .    .    .    .D==eE------------------------R    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   add	rsp, 8
+[0,134]   .    .    .    .    .    .    .    .    .    .D===========================eeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   ror	esi, 7
+[0,135]   .    .    .    .    .    .    .    .    .    . D==eeeeeeE--------------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   pop	rbx
+[0,136]   .    .    .    .    .    .    .    .    .    . D========eeeeeeE--------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   pop	rbp
+[0,137]   .    .    .    .    .    .    .    .    .    . D============================eER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	edx, esi
+[0,138]   .    .    .    .    .    .    .    .    .    . D==============eeeeeeE---------R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   pop	r12
+[0,139]   .    .    .    .    .    .    .    .    .    .  D===================eeeeeeE---R .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   pop	r13
+[0,140]   .    .    .    .    .    .    .    .    .    .  D============================eER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	esi, edx
+[0,141]   .    .    .    .    .    .    .    .    .    .  D============================eER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	eax, edx
+[0,142]   .    .    .    .    .    .    .    .    .    .  D=========================eeeeeeER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   pop	r14
+[0,143]   .    .    .    .    .    .    .    .    .    .   D==============================eeeeeeER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   pop	r15
+[0,144]   .    .    .    .    .    .    .    .    .    .   D============================eeE------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	esi, 16
+[0,145]   .    .    .    .    .    .    .    .    .    .   D==============================eE-----R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	eax, esi
+[0,146]   .    .    .    .    .    .    .    .    .    .    D==============================eE----R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   mov	esi, eax
+[0,147]   .    .    .    .    .    .    .    .    .    .    D==============================eE----R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	ecx, eax
+[0,148]   .    .    .    .    .    .    .    .    .    .    D===============================eeE--R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	esi, 4
+[0,149]   .    .    .    .    .    .    .    .    .    .    .D================================eE-R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	ecx, esi
+[0,150]   .    .    .    .    .    .    .    .    .    .    .D=================================eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	edx, ecx
+[0,151]   .    .    .    .    .    .    .    .    .    .    .D=================================eeER .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   rol	ecx, 14
+[0,152]   .    .    .    .    .    .    .    .    .    .    . D==================================eER.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	edx, ecx
+[0,153]   .    .    .    .    .    .    .    .    .    .    . D===================================eER    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   xor	eax, edx
+[0,154]   .    .    .    .    .    .    .    .    .    .    . D===================================eeER   .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   ror	edx, 8
+[0,155]   .    .    .    .    .    .    .    .    .    .    .  D====================================eER  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   sub	eax, edx
+[0,156]   .    .    .    .    .    .    .    .    .    .    .  D========eE----------------------------R  .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   .   ret
+[0,157]   .    .    .    .    .    .    .    .    .    .    .   D================================eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeER.   call	rand
+[0,158]   .    .    .    .    .    .    .    .    .    .    .   D====================================eE-----------------------------------------------------------------------------------------------R.   mov	dword ptr [rip + inet6_ehash_secret.1], eax
+[0,159]   .    .    .    .    .    .    .    .    .    .    .    D===================================eE-----------------------------------------------------------------------------------------------R.   mov	r14d, eax
+[0,160]   .    .    .    .    .    .    .    .    .    .    .    DeeeeeE------------------------------------------------------------------------------------------------------------------------------R.   mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+[0,161]   .    .    .    .    .    .    .    .    .    .    .    D=====eE-----------------------------------------------------------------------------------------------------------------------------R.   test	eax, eax
+[0,162]   .    .    .    .    .    .    .    .    .    .    .    D=======eE---------------------------------------------------------------------------------------------------------------------------R.   jne	.L3
+[0,163]   .    .    .    .    .    .    .    .    .    .    .    .D===============================eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeER   call	rand
+[0,164]   .    .    .    .    .    .    .    .    .    .    .    .D===================================eE-----------------------------------------------------------------------------------------------R   mov	dword ptr [rip + ipv6_hash_secret.0], eax
+[0,165]   .    .    .    .    .    .    .    .    .    .    .    . D======eE---------------------------------------------------------------------------------------------------------------------------R   jmp	.L3
+
+
+Average Wait times (based on the timeline view):
+[0]: Executions
+[1]: Average time spent waiting in a scheduler's queue
+[2]: Average time spent waiting in a scheduler's queue while ready
+[3]: Average time elapsed from WB until retire stage
+
+      [0]    [1]    [2]    [3]
+0.     1     1.0    1.0    0.0       push	r15
+1.     1     1.0    1.0    4.0       mov	r15, rcx
+2.     1     5.0    0.0    0.0       push	r14
+3.     1     10.0   0.0    0.0       push	r13
+4.     1     1.0    1.0    12.0      mov	r13, rsi
+5.     1     14.0   0.0    0.0       push	r12
+6.     1     1.0    1.0    17.0      mov	r12, rdi
+7.     1     18.0   0.0    0.0       push	rbp
+8.     1     1.0    1.0    21.0      mov	ebp, r8d
+9.     1     22.0   0.0    0.0       push	rbx
+10.    1     1.0    1.0    25.0      mov	ebx, edx
+11.    1     27.0   0.0    0.0       sub	rsp, 8
+12.    1     1.0    1.0    21.0      mov	r14d, dword ptr [rip + inet6_ehash_secret.1]
+13.    1     6.0    0.0    20.0      test	r14d, r14d
+14.    1     7.0    0.0    19.0      je	.L6
+15.    1     2.0    2.0    20.0      mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+16.    1     6.0    0.0    19.0      test	eax, eax
+17.    1     7.0    0.0    18.0      je	.L7
+18.    1     1.0    1.0    20.0      mov	rdi, qword ptr [r15]
+19.    1     2.0    2.0    19.0      mov	rcx, qword ptr [r15 + 8]
+20.    1     1.0    1.0    23.0      movzx	ebp, bp
+21.    1     1.0    1.0    23.0      movabs	rdx, 8893317812261383291
+22.    1     1.0    1.0    23.0      movabs	rax, 7746018054687388513
+23.    1     2.0    2.0    22.0      movabs	r8, -2819311800304343090
+24.    1     4.0    0.0    19.0      xor	rdx, rdi
+25.    1     5.0    0.0    18.0      mov	rsi, rdx
+26.    1     5.0    0.0    18.0      add	rax, rdx
+27.    1     5.0    0.0    16.0      rol	rsi, 16
+28.    1     7.0    0.0    15.0      xor	rax, rsi
+29.    1     1.0    1.0    21.0      movabs	rsi, 6604156963082918679
+30.    1     7.0    0.0    14.0      add	r8, rax
+31.    1     8.0    1.0    12.0      rol	rax, 21
+32.    1     4.0    1.0    17.0      add	rsi, rdx
+33.    1     3.0    3.0    17.0      movabs	rdx, -7582328775477698482
+34.    1     9.0    0.0    11.0      xor	rax, r8
+35.    1     4.0    0.0    16.0      xor	rdx, rsi
+36.    1     7.0    0.0    13.0      xor	rdi, r8
+37.    1     4.0    1.0    14.0      rol	rsi, 32
+38.    1     9.0    0.0    10.0      xor	rax, rcx
+39.    1     7.0    0.0    12.0      add	rdi, rdx
+40.    1     3.0    0.0    14.0      rol	rdx, 13
+41.    1     9.0    0.0    9.0       add	rsi, rax
+42.    1     8.0    0.0    8.0       rol	rax, 16
+43.    1     6.0    0.0    11.0      xor	rdx, rdi
+44.    1     10.0   0.0    7.0       xor	rax, rsi
+45.    1     6.0    1.0    9.0       rol	rdi, 32
+46.    1     8.0    0.0    8.0       add	rsi, rdx
+47.    1     10.0   0.0    6.0       add	rdi, rax
+48.    1     8.0    3.0    6.0       rol	rdx, 17
+49.    1     10.0   1.0    4.0       rol	rax, 21
+50.    1     9.0    0.0    5.0       xor	rdx, rsi
+51.    1     9.0    0.0    5.0       xor	rcx, rdi
+52.    1     7.0    0.0    6.0       rol	rsi, 32
+53.    1     10.0   0.0    3.0       xor	rax, rdi
+54.    1     9.0    0.0    4.0       add	rcx, rdx
+55.    1     10.0   1.0    2.0       rol	rdx, 13
+56.    1     1.0    1.0    11.0      movabs	rdi, 1152921504606846976
+57.    1     10.0   0.0    2.0       xor	rax, rdi
+58.    1     11.0   0.0    1.0       xor	rdx, rcx
+59.    1     8.0    0.0    2.0       rol	rcx, 32
+60.    1     10.0   0.0    1.0       add	rsi, rax
+61.    1     10.0   1.0    0.0       rol	rax, 16
+62.    1     12.0   0.0    0.0       xor	rax, rsi
+63.    1     10.0   0.0    2.0       add	rsi, rdx
+64.    1     10.0   1.0    0.0       rol	rdx, 17
+65.    1     12.0   0.0    0.0       add	rcx, rax
+66.    1     11.0   0.0    0.0       rol	rax, 21
+67.    1     12.0   1.0    0.0       xor	rdx, rsi
+68.    1     13.0   0.0    0.0       xor	rax, rcx
+69.    1     9.0    1.0    2.0       rol	rsi, 32
+70.    1     11.0   0.0    1.0       xor	rcx, rdi
+71.    1     12.0   0.0    0.0       add	rcx, rdx
+72.    1     11.0   1.0    0.0       xor	sil, -1
+73.    1     12.0   1.0    0.0       rol	rdx, 13
+74.    1     14.0   0.0    0.0       xor	rdx, rcx
+75.    1     11.0   0.0    2.0       add	rsi, rax
+76.    1     12.0   1.0    0.0       rol	rax, 16
+77.    1     14.0   0.0    0.0       xor	rax, rsi
+78.    1     12.0   2.0    0.0       rol	rcx, 32
+79.    1     13.0   0.0    0.0       add	rsi, rdx
+80.    1     13.0   1.0    0.0       rol	rdx, 17
+81.    1     13.0   0.0    1.0       add	rcx, rax
+82.    1     12.0   0.0    0.0       rol	rax, 21
+83.    1     14.0   0.0    0.0       xor	rdx, rsi
+84.    1     14.0   0.0    0.0       xor	rax, rcx
+85.    1     14.0   3.0    0.0       rol	rsi, 32
+86.    1     14.0   0.0    1.0       add	rcx, rdx
+87.    1     13.0   0.0    0.0       rol	rdx, 13
+88.    1     15.0   0.0    0.0       add	rsi, rax
+89.    1     15.0   0.0    0.0       xor	rdx, rcx
+90.    1     15.0   3.0    0.0       rol	rax, 16
+91.    1     15.0   2.0    0.0       rol	rcx, 32
+92.    1     16.0   0.0    0.0       xor	rax, rsi
+93.    1     14.0   0.0    2.0       add	rsi, rdx
+94.    1     16.0   2.0    0.0       rol	rdx, 17
+95.    1     16.0   0.0    0.0       add	rcx, rax
+96.    1     17.0   0.0    0.0       xor	rdx, rsi
+97.    1     17.0   1.0    0.0       rol	rax, 21
+98.    1     18.0   0.0    0.0       xor	rax, rcx
+99.    1     17.0   4.0    0.0       rol	rsi, 32
+100.   1     17.0   0.0    1.0       add	rcx, rdx
+101.   1     17.0   1.0    0.0       rol	rdx, 13
+102.   1     18.0   0.0    0.0       add	rsi, rax
+103.   1     18.0   1.0    0.0       rol	rax, 16
+104.   1     18.0   0.0    1.0       xor	rcx, rdx
+105.   1     20.0   0.0    0.0       xor	rax, rsi
+106.   1     18.0   0.0    1.0       add	rsi, rcx
+107.   1     18.0   0.0    0.0       rol	rcx, 17
+108.   1     20.0   0.0    0.0       mov	rdx, rcx
+109.   1     19.0   0.0    0.0       rol	rax, 21
+110.   1     1.0    1.0    15.0      mov	ecx, dword ptr [r12]
+111.   1     20.0   0.0    0.0       xor	rdx, rsi
+112.   1     20.0   3.0    0.0       rol	rsi, 32
+113.   1     22.0   0.0    0.0       xor	edx, esi
+114.   1     5.0    0.0    17.0      lea	edi, [r14 + rcx - 559038725]
+115.   1     1.0    1.0    16.0      mov	ecx, dword ptr [r13 + 12]
+116.   1     22.0   0.0    0.0       xor	edx, eax
+117.   1     1.0    1.0    21.0      mov	eax, ebx
+118.   1     14.0   12.0   8.0       shl	eax, 16
+119.   1     22.0   0.0    0.0       add	edx, edi
+120.   1     6.0    1.0    16.0      add	ecx, edi
+121.   1     15.0   1.0    7.0       or	eax, ebp
+122.   1     23.0   0.0    0.0       mov	esi, edx
+123.   1     15.0   0.0    7.0       add	eax, edi
+124.   1     23.0   0.0    0.0       rol	esi, 14
+125.   1     22.0   0.0    2.0       xor	eax, edx
+126.   1     24.0   0.0    0.0       sub	eax, esi
+127.   1     25.0   0.0    0.0       mov	esi, eax
+128.   1     25.0   0.0    0.0       xor	ecx, eax
+129.   1     25.0   0.0    0.0       rol	esi, 11
+130.   1     27.0   0.0    0.0       sub	ecx, esi
+131.   1     28.0   0.0    0.0       mov	esi, ecx
+132.   1     27.0   0.0    0.0       xor	edx, ecx
+133.   1     3.0    3.0    24.0      add	rsp, 8
+134.   1     28.0   0.0    0.0       ror	esi, 7
+135.   1     3.0    0.0    20.0      pop	rbx
+136.   1     9.0    0.0    14.0      pop	rbp
+137.   1     29.0   0.0    0.0       sub	edx, esi
+138.   1     15.0   0.0    9.0       pop	r12
+139.   1     20.0   0.0    3.0       pop	r13
+140.   1     29.0   0.0    0.0       mov	esi, edx
+141.   1     29.0   0.0    0.0       xor	eax, edx
+142.   1     26.0   0.0    0.0       pop	r14
+143.   1     31.0   0.0    0.0       pop	r15
+144.   1     29.0   0.0    6.0       rol	esi, 16
+145.   1     31.0   0.0    5.0       sub	eax, esi
+146.   1     31.0   0.0    4.0       mov	esi, eax
+147.   1     31.0   0.0    4.0       xor	ecx, eax
+148.   1     32.0   0.0    2.0       rol	esi, 4
+149.   1     33.0   0.0    1.0       sub	ecx, esi
+150.   1     34.0   0.0    0.0       xor	edx, ecx
+151.   1     34.0   0.0    0.0       rol	ecx, 14
+152.   1     35.0   0.0    0.0       sub	edx, ecx
+153.   1     36.0   0.0    0.0       xor	eax, edx
+154.   1     36.0   0.0    0.0       ror	edx, 8
+155.   1     37.0   0.0    0.0       sub	eax, edx
+156.   1     9.0    9.0    28.0      ret
+157.   1     33.0   1.0    0.0       call	rand
+158.   1     37.0   0.0    95.0      mov	dword ptr [rip + inet6_ehash_secret.1], eax
+159.   1     36.0   0.0    95.0      mov	r14d, eax
+160.   1     1.0    1.0    126.0     mov	eax, dword ptr [rip + ipv6_hash_secret.0]
+161.   1     6.0    0.0    125.0     test	eax, eax
+162.   1     8.0    1.0    123.0     jne	.L3
+163.   1     32.0   2.0    0.0       call	rand
+164.   1     36.0   1.0    95.0      mov	dword ptr [rip + ipv6_hash_secret.0], eax
+165.   1     7.0    7.0    123.0     jmp	.L3
+       1     14.1   0.6    10.3      <total>
